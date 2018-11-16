@@ -6,8 +6,9 @@
 								<div class='widget-content'>
 									<ul id='nav1'>
 										<li><a href='/'>Home</a></li>
-										<li><a href='/'>About Us</a></li>
-										<li><a href='/'>Contact Us</a></li>
+                                        @foreach($page->archive as $p)
+                                        <li class="ampstart-nav-item "><a href="{{ $p->url }}" class="text-decoration-none block">{{$p->title}}</a></li>
+                                        @endforeach
 									</ul>
 								</div>
 							</div>
