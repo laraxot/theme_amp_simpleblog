@@ -38,7 +38,7 @@
 							<div class='widget Header' data-version='1' id='Header1'>
 								<div id='header-inner'>
 									<a href='https://ampoceanfree.blogspot.com/'>
-										<amp-img alt='Amp Ocean Free' class='no-cover' height='90' id='Header1_headerimg' layout='responsive' src='https://4.bp.blogspot.com/-UIAQWHmQuyo/WdvY5fh980I/AAAAAAAARTI/EBsbRe0YQqoKCX79a9C640aknmPGJ-IpwCK4BGAYYCw/s1600/logo-amp-ocean-free.jpg' width='296'></amp-img>
+										<amp-img alt='Amp Ocean Free' class='no-cover' height='90' id='Header1_headerimg' layout='responsive' src='../../../../photos/1/hfashion.jpg' width='296'></amp-img>
 									</a>
 								</div>
 							</div>
