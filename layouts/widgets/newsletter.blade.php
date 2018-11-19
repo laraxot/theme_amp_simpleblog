@@ -6,11 +6,11 @@
 							<tr>
 								<td>
 									<div class='input-field'>
-										<input class='inputfield' name='email' placeholder='Email adress...' title='Email adress' type='text'/>
+										<input class='inputfield' name='email' placeholder='Indirizzo Email...' title='Email adress' type='text'/>
 									</div>
 								</td>
 								<td>
-									<input class='follow-by-email-submit buttonx red' type='submit' value='Suscríbete'/>
+									<input class='follow-by-email-submit buttonx red' type='submit' value='Iscriviti'/>
 								</td>
 							</tr>
 						</table>
