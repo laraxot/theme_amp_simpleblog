@@ -1,22 +1,19 @@
 <div class='breadcrumbs'>
-			<span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'>
-			<a href='https://ampoceanfree.blogspot.com/' itemprop='url'>
+	<span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'>
+		<a href='{{ url($lang) }}' itemprop='url'>
 			<span itemprop='title'>
-			<i class='fa fa-home'></i>
-			Home
+				<i class='fa fa-home'></i>Home
 			</span>
-			</a>
-			</span>
-			/ 
-			<span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'>
-			<a href='https://ampoceanfree.blogspot.com/search/label/Amp%20HTML' itemprop='url'>
-			<span itemprop='title'>
-			Amp HTML
-			</span>
-			</a>
-			</span>
-			/ 
-			<span>
-			Your phone can see in dark and measure heat
-			</span>
-		</div>
+		</a>
+	</span>
+	@foreach($params as $p)
+	@if(is_object($p))
+	/
+	<span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'>
+		<a href='{{ $p->url }}' itemprop='url'>
+			<span itemprop='title'>{{ $p->title }}</span>
+		</a>
+	</span>
+	@endif
+	@endforeach
+</div>
