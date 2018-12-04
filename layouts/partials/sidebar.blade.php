@@ -12,15 +12,19 @@
 	<div class='sidebar ready-widget section' id='sidebar2'>
 		{{-- quandro avremo video   
 		@include('pub_theme::layouts.widgets.youtube')
-		--}}
 		@include('pub_theme::layouts.widgets.profile')
 		@include('pub_theme::layouts.widgets.newsletter')
+		--}}
 		@include('pub_theme::layouts.widgets.follow_us')
 		@include('pub_theme::layouts.widgets.facebook')
 		@include('pub_theme::layouts.widgets.twitter')
+		{{--  
 		@include('pub_theme::layouts.widgets.popular_posts')	
+		--}}
 		@include('pub_theme::layouts.widgets.categories')	
+		{{--  
 		@include('pub_theme::layouts.widgets.archive_month_year')	
 		@include('pub_theme::layouts.widgets.slider')	
+		--}}
 	</div>
 </div>

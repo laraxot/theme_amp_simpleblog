@@ -46,21 +46,13 @@
 		</div>
 		<div class='header-AdSense'>
 			<div class='section' id='AdSense'>
-				<div class='widget HTML' data-version='1' id='HTML19'>
-					<h2 class='title'>Header AdSense</h2>
-					<div class='widget-content'>
-						<amp-ad layout="fixed-height" height="90"
-							type="adsense"
-							data-ad-client="ca-pub-0062851945838123"
-							data-ad-slot="1641840544"></amp-ad>
-					</div>
-				</div>
+				@include('pub_theme::layouts.widgets.adsense')
 			</div>
 		</div>
 	</div>
 </div>
 <!-- Main Menu -->
-{{--
+{{-- 
 <div id='menu-ayudadeblogger'>
 	<div class='adb-head row'>
 		<div class='start-menu'>

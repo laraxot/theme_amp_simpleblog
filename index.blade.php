@@ -4,21 +4,21 @@
 	<div class='Gadget-presentacion no-items section' id='Gadget-presentacion'></div>
 </div>
 <div id='gadget-horizontal'>
-	@include('pub_theme::widgets.adsense')
+	@include('pub_theme::layouts.widgets.adsense')
 </div>
 <div class='posts-title'>
 	<h2 class='title'>
-		<a href='#'>Recent Posts</a>
+		<a href='#'>Recent Articles</a>
 	</h2>
 </div>
 <div class='main section' id='main'>
 	<div class='widget Blog' data-version='1' id='Blog1'>
 		<div class='blog-posts hfeed'>
 			@php
-				$posts=$post->archive()->paginate(5);
+				$articles=$article->archive()->paginate(5);
 			@endphp
-			@foreach($posts as $p)
-				@include('pub_theme::layouts.items.post',['row'=>$p])
+			@foreach($articles as $p)
+				@include('pub_theme::layouts.items.article',['row'=>$p])
 			@endforeach
 			
 		</div>
