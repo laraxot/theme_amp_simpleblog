@@ -16,7 +16,7 @@
 		</div>
 		<div class='block-image'>
 			<div class='thumb'>
-				<amp-img alt='Your phone can see in dark and measure heat' height='300' layout='responsive' src='{{ $row->image_src }}' width='500'></amp-img>
+				<amp-img alt='Your phone can see in dark and measure heat' height='300' layout='responsive' src='{{ url("/").$row->image_src }}' width='500'></amp-img>
 			</div>
 			<div class='postags'>
 				<a class='Amp HTML' href='https://ampoceanfree.blogspot.com/search/label/Amp%20HTML' rel='tag'>Amp HTML</a>

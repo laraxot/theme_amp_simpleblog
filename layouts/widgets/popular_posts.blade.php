@@ -2,11 +2,17 @@
 			<h2>Popular Posts</h2>
 			<div class='widget-content PopularPosts-sidebar'>
 				<ul>
+					@php
+						$articles=$article->archive()->paginate(5);
+					@endphp
+					@foreach($articles as $p)
+						{{-- @include('pub_theme::layouts.items.article',['row'=>$p]) --}}
+					{{ url("/").$p->image_src }}
 					<li>
 						<div class='item-content'>
 							<div class='item-thumbnail'>
-								<a href='https://ampoceanfree.blogspot.com/2017/10/your-phone-can-see-in-dark-and-measure.html' target='_blank'>
-									<amp-img alt='Your phone can see in dark and measure heat' height='55' src='https://1.bp.blogspot.com/-5t-foUpwWvo/WdunBsDdL6I/AAAAAAAARSQ/RZwYEXXYrd8EL8Se2CzF1e0-rWchFJH3ACLcBGAs/w300/amp-4.jpg' title='Your phone can see in dark and measure heat' width='72'></amp-img>
+								<a href='{{ url("it/article/".$p->guid) }}' target='_blank'>
+									<amp-img alt='Your phone can see in dark and measure heat' height='55' src='{{ url("/").$p->image_src }}' title='Your phone can see in dark and measure heat' width='72'></amp-img>
 								</a>
 							</div>
 							<div class='item-title'><a href='https://ampoceanfree.blogspot.com/2017/10/your-phone-can-see-in-dark-and-measure.html'>Your phone can see in dark and measure heat</a></div>
@@ -14,6 +20,7 @@
 						</div>
 						<div class='clear'></div>
 					</li>
+					@endforeach
 					<li>
 						<div class='item-content'>
 							<div class='item-thumbnail'>

@@ -7,6 +7,7 @@
 					frameborder='0'
 					scrolling='yes'
 					src='https://cdn.rawgit.com/grupodelecluse/amp-ocean-free/4950dcbb/caja-twitter.html?user=ayudadeblogger'>
+					<!-- src="{{ url('frames/twitter.html?page='.Theme::metatag('twitter_pagename')) }}"> -->
 				</amp-iframe>
 			</div>
 		</div>

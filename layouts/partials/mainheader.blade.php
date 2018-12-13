@@ -20,7 +20,7 @@
 				<div class='widget LinkList' data-version='1' id='LinkList120'>
 					<div class='widget-content'>
 						<ul>
-							<li><a class='facebook' href='https://www.facebook.com/hfashionit/' target='_blank' title='facebook'></a></li>
+							<li><a class='facebook' href="{{ url('frames/facebook.html?page='.Theme::metatag('facebook_pagename')) }}" target='_blank' title='facebook'></a></li>
 							<li><a class='twitter' href='https://www.twitter.com/' target='_blank' title='twitter'></a></li>
 							<li><a class='gplus' href='https://www.google.com/' target='_blank' title='gplus'></a></li>
 							<li><a class='instagram' href='https://www.instagram.com/' target='_blank' title='instagram'></a></li>
@@ -52,7 +52,7 @@
 	</div>
 </div>
 <!-- Main Menu -->
-{{-- 
+{{--
 <div id='menu-ayudadeblogger'>
 	<div class='adb-head row'>
 		<div class='start-menu'>

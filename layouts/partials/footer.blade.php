@@ -58,14 +58,7 @@
 			@include('pub_theme::layouts.widgets.popular_posts')
 		</div>
 		<div class='seccion-left ready-widget section' id='footer-seccion-2'>
-			<div class='widget HTML' data-version='1' id='HTML17'>
-				<h2 class='title'>Amp</h2>
-				<div class='widget-content'>
-					<p class="words-blanck">El proyecto AMP es una iniciativa de código abierto que busca mejorar la web para todos. El proyecto permite la creación de sitios web y anuncios consistentemente rápidos, bellos y de alto rendimiento en dispositivos y plataformas de distribución.</p>
-					<br/>
-					<p class="words-blanck">Ayudadeblogger.com ha creado sitios exclusivos en el formato Amp HTML (Accelerated Mobile Pages Project). Creemos el conocimiento debe ser distribuido gratuitamente a todos los usuarios de la red.</p>
-				</div>
-			</div>
+			@include('pub_theme::layouts.widgets.html')
 		</div>
 		<div class='seccion-left ready-widget section' id='footer-seccion-3'>
 			@include('pub_theme::layouts.widgets.random_posts')
