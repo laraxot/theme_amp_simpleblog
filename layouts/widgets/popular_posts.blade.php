@@ -3,25 +3,21 @@
 			<div class='widget-content PopularPosts-sidebar'>
 				<ul>
 					@php
-						$articles=$article->archive()->paginate(5);
+						$articles=$article->archive()->limit(5)->get(); //selezione da modificare in "più popolari"
 					@endphp
 					@foreach($articles as $p)
-						{{-- @include('pub_theme::layouts.items.article',['row'=>$p]) --}}
-					{{ url("/").$p->image_src }}
-					<li>
-						<div class='item-content'>
-							<div class='item-thumbnail'>
-								<a href='{{ url("it/article/".$p->guid) }}' target='_blank'>
-									<amp-img alt='Your phone can see in dark and measure heat' height='55' src='{{ url("/").$p->image_src }}' title='Your phone can see in dark and measure heat' width='72'></amp-img>
-								</a>
-							</div>
-							<div class='item-title'><a href='https://ampoceanfree.blogspot.com/2017/10/your-phone-can-see-in-dark-and-measure.html'>Your phone can see in dark and measure heat</a></div>
-							<div class='item-snippet'> Phone cameras have gotten extremely powerful. The one in your phone right now can capture your kid&#39;s quick moves at the soccer game, ta...</div>
-						</div>
-						<div class='clear'></div>
-					</li>
+ 							@include('pub_theme::layouts.partials.popular',['row'=>$p])
 					@endforeach
-					<li>
+
+
+
+
+
+
+
+
+			{{--
+						<li>
 						<div class='item-content'>
 							<div class='item-thumbnail'>
 								<a href='https://ampoceanfree.blogspot.com/2017/04/the-best-blogger-design-amp-html.html' target='_blank'>
@@ -57,6 +53,11 @@
 						</div>
 						<div class='clear'></div>
 					</li>
+				--}}
+
+
+
+
 				</ul>
 			</div>
 		</div>

@@ -10,14 +10,14 @@
 					<div itemType='https://schema.org/WebPage' itemprop='mainEntityOfPage' itemscope='itemscope'></div>
 					<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
 						<div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-							<meta content='{{ $row->image_src }}' itemprop='url'/>
+							<meta content='{{ url('/').$row->image_src }}' itemprop='url'/>
 							<meta content='260px' itemprop='width'/>
 							<meta content='60px' itemprop='height'/>
 						</div>
 						<meta content='Amp Ocean Free' itemprop='name'/>
 					</div>
 					<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-						<meta content='{{ $row->image_src }}' itemprop='url'/>
+						<meta content='{{ url('/').$row->image_src }}' itemprop='url'/>
 						<meta content='700' itemprop='width'/>
 						<meta content='700' itemprop='height'/>
 					</div>
@@ -26,7 +26,7 @@
 							{{ $row->title }}
 						</h1>
 					</div>
-					<amp-img alt='Your phone can see in dark and measure heat' height='300' layout='responsive' src='{{ $row->image_src }}' width='500'></amp-img>
+					<amp-img alt='Your phone can see in dark and measure heat' height='300' layout='responsive' src='{{ url('/').$row->image_src }}' width='500'></amp-img>
 					<div class='post-header'>
 						<div class='post-meta'>
 							<span class='post-timestamp'>
@@ -45,7 +45,7 @@
 						</div>
 					</article>
 					@include($view.'.footer')
-					
+
 				</article>
 				<div class='comments' id='comments'>
 					<a name='comments'></a>
