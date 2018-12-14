@@ -37,7 +37,7 @@
 							<a href='https://ampoceanfree.blogspot.com/search/label/Amp%20HTML' rel='tag'>Amp HTML</a>
 							</span>
 						</div>
-						@include('pub_theme::layouts.boxes.share')
+						{{-- @include('pub_theme::layouts.boxes.share') --}}
 					</div>
 					<article>
 						<div class='post-body entry-content' id='post-body-3060405834758603387' itemprop='articleBody'>

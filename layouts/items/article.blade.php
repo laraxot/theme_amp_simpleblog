@@ -10,7 +10,7 @@
 			<meta content='Amp Ocean Free' itemprop='name'/>
 		</div>
 		<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-			<meta content='{{ $row->image_src }}' itemprop='url'/>
+			<meta content='{{ url("/").$row->image_src }}' itemprop='url'/>
 			<meta content='700' itemprop='width'/>
 			<meta content='700' itemprop='height'/>
 		</div>

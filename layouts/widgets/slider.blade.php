@@ -1,3 +1,6 @@
+@php
+	$articles=$article->archive()->paginate(5);
+@endphp
 <div class='widget HTML' data-version='1' id='HTML225'>
 			<h2 class='title'>Amp Slider</h2>
 			<div class='widget-content'>
@@ -7,7 +10,17 @@
 					layout="responsive"
 					type="slides"
 					autoplay>
-					<a href="#">
+					@foreach($articles as $p)
+						<a href="{{ $p->url }}">
+							<amp-img src="{{ url("/").$p->image_src }}"
+								layout="fill"
+								alt="{{ $p->title }}"
+								attribution="visualhunt"></amp-img>
+							<div class="caption">{{ $p->title }}</div>
+						</a>
+					@endforeach
+					{{--
+					<!-- <a href="#">
 						<amp-img src="https://2.bp.blogspot.com/-asr6VRm4Wmo/WdljGFTJxTI/AAAAAAAARNc/WfrGtmYy-XozflcVNSJq4NpSlGqZe84NACLcBGAs/s300/imagen-5.jpg"
 							layout="fill"
 							alt="Amazon&#8217;s Apple Watch killer will be free and sell you everything"
@@ -26,8 +39,9 @@
 							layout="fill"
 							alt="Decoration Tips for your Child&#8217;s Birthday Party"
 							attribution="visualhunt"></amp-img>
-						<div class="caption">Decoration Tips for your Child&#8217;s Birthday Party</div>
+						<div class="caption">Decoration Tips for your Child&#8217;s Birthday Party</div> -->
 					</a>
+					--}}
 				</amp-carousel>
 			</div>
 		</div>

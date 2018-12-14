@@ -20,7 +20,7 @@
 			@foreach($articles as $p)
 				@include('pub_theme::layouts.items.article',['row'=>$p])
 			@endforeach
-			
+
 		</div>
 		<div class='blog-pager' id='blog-pager'>
 			<span id='blog-pager-older-link'>

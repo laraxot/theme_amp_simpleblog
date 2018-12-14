@@ -1,14 +1,17 @@
 @extends('pub_theme::layouts.plane')
 @section('body')
-	{{-- da parametrizzare.. o meglio mettere i dati in metatags  
+	{{-- da parametrizzare.. o meglio mettere i dati in metatags
 	@include('pub_theme::layouts.google_amps.google_analytics')
 	--}}
 	<div id='top'></div>
 	<div id='outer-wrapper'>
 		@include('pub_theme::layouts.partials.mainheader')
+		{{--
 		<div id='gadget-horizontal'>
 			<div class='Gadgets-wiget no-items section' id='Gadgets-wiget'></div>
 		</div>
+		--}}
+		@include('pub_theme::layouts.partials.gadgethorizontal')
 		<div class='clear'></div>
 		<div class='row' id='content-wrapper'>
 			<div class='clear'></div>
