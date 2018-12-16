@@ -11,7 +11,6 @@
 			<div class='Gadgets-wiget no-items section' id='Gadgets-wiget'></div>
 		</div>
 		--}}
-		@include('pub_theme::layouts.partials.gadgethorizontal')
 		<div class='clear'></div>
 		<div class='row' id='content-wrapper'>
 			<div class='clear'></div>

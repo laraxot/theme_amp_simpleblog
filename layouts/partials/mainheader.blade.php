@@ -37,8 +37,8 @@
 			<div class='section' id='header'>
 				<div class='widget Header' data-version='1' id='Header1'>
 					<div id='header-inner'>
-						<a href='https://ampoceanfree.blogspot.com/'>
-							<amp-img alt='Amp Ocean Free' class='no-cover' height='90' id='Header1_headerimg' layout='responsive' src="{{asset('/photos/1/hfashion.jpg')}}" width='296'></amp-img>
+						<a href='{{ url('/') }}'>
+							<amp-img alt='Amp Ocean Free' class='no-cover' height='90' id='Header1_headerimg' layout='responsive' src="{{	Theme::url('theme/pub/img/hfashion_logo.png')	}}" width='296'></amp-img>
 						</a>
 					</div>
 				</div>
