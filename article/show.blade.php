@@ -1,4 +1,4 @@
-{{ Theme::add('theme/pub/css/show.css', 1) }}
+{{ Theme::add('theme/pub/css/show.css', 2) }}
 @extends('pub_theme::layouts.app')
 @section('content')
 <div class='main section' id='main'>

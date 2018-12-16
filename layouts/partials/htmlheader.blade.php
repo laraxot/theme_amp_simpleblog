@@ -63,6 +63,6 @@
 		<script async='async' custom-element='amp-ad' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js'></script>
 		<script async='async' custom-element='amp-carousel' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js'></script>
 		<script async='async' custom-element='amp-iframe' src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'></script>
-		{{ Theme::add('theme/pub/css/style.css', 0) }}
+		{{ Theme::add('theme/pub/css/style.css', 1) }}
 		{!! Theme::showStyles(false)  !!}
 </head>
