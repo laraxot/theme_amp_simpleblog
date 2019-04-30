@@ -6,7 +6,7 @@
 					<div class='widget-content'>
 						<ul id='nav1'>
 							<li><a href="{{ url('/') }}">Home</a></li>
-							@foreach($page->archive as $p)
+							@foreach($page->archive()->get() as $p)
 							<li class="ampstart-nav-item "><a href="{{ $p->url }}" class="text-decoration-none block">{{$p->title}}</a></li>
 							@endforeach
 						</ul>
