@@ -1,5 +1,7 @@
 @extends('pub_theme::layouts.app')
 @section('content')
+@include('extend::includes.components')
+@include('extend::includes.flash')
 <div id='gadget-horizontal'>
 	<div class='Gadget-presentacion no-items section' id='Gadget-presentacion'></div>
 </div>
@@ -13,6 +15,7 @@
 </div>
 <div class='main section' id='main'>
 	<div class='widget Blog' data-version='1' id='Blog1'>
+		{!! Form::bsBtnCreate(['row'=>$article->getLinkedModel()]) !!}
 		<div class='blog-posts hfeed'>
 			@php
 				$articles=$article->archive()->paginate(5);
